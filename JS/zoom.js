@@ -39,9 +39,9 @@
     this._activeZoom.zoomImage()
 
     // todo(fat): probably worth throttling this
-    this._$window.on('scroll.zoom', $.proxy(this._scrollHandler, this))
+    //this._$window.on('scroll.zoom', $.proxy(this._scrollHandler, this))
 
-    this._$document.on('keyup.zoom', $.proxy(this._keyHandler, this))
+    //this._$document.on('keyup.zoom', $.proxy(this._keyHandler, this))
     this._$document.on('touchstart.zoom', $.proxy(this._touchStart, this))
 
     // we use a capturing phase here to prevent unintended js events
